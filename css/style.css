@@ -1,0 +1,163 @@
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-navigation {
+    background-color:#181818!important
+} 
+
+.btn-discord {
+  color:#fff;
+  background-color:#7289da;
+  border-color:#7289da;
+}
+
+.btn-paypal {
+  color:#fff;
+  background-color:#169BD7;
+  border-color:#169BD7;
+}
+
+.btn-paypal:hover, .btn-paypal:focus{
+  color:#fff;
+  background-color:#1287bd;
+  border-color:#1287bd
+}
+
+.btn-discord:hover, .btn-discord:focus{
+  color:#fff;
+  background-color:#687cc5;
+  border-color:#687cc5
+}
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  background: url('../img/image1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-image-2 {
+  background: url('../img/image2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-image-3 {
+  background: url('../img/image3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.blue-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(61, 155, 233, 0.5);
+}
+
+.pink-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 153, 0.5);
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+#core {
+  position: relative;
+  min-height: 275px;
+  background: url('../img/image4.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+#patreon {
+  position: relative;
+  min-height: 300px;
+  background: url('../img/image5.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+#about {
+  position: relative;
+  min-height: 200px;
+  background: url('../img/image6.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+#discord {
+  position: relative;
+  min-height: 300px;
+  background: url('../img/image7.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.main-footer {
+  background: #181818;
+}
+
+.footer-icon {
+  font-size: 24px;
+}
+
+@media (min-width: 1px) and (max-width: 1024px) {
+  
+  .main-footer {
+    text-align: center!important;
+  }
+  
+}
+
+@media (min-width: 1025px) {
+
+  .name {
+    text-align: left;
+  }
+
+  .icons {
+    text-align: right;
+  }
+
+}
+
+@media (min-width: 100px) and (max-width: 473px) {
+
+  #patreon {
+    min-height: 325px!important;
+  }
+  
+
+}
