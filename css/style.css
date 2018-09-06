@@ -6,7 +6,7 @@ body {
 
 .bg-navigation {
     background-color:#181818!important
-} 
+}
 
 .btn-discord {
   color:#fff;
@@ -31,6 +31,88 @@ body {
   background-color:#687cc5;
   border-color:#687cc5
 }
+
+.loader {
+  position: relative;
+  height: 100vh;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top:    0;
+  left:   0;
+  bottom: 0;
+  right:  0;
+  z-index: 9999;
+  transition: all .3s ease-in-out;
+  background: rgba(10, 1, 112, .8);
+}
+
+.loader:before {
+  content: "";
+  z-index: 99999;
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) rotate(0deg) scale(0, 0);
+  width:  10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #0366b2;
+  box-shadow:
+    31px 45px 0 5px #3385ff,
+    13px 20px 0 2px #ff9967,
+    -31px -45px 0 5px #3385ff,
+    -13px -20px 0 2px #ff9967;
+  animation: loader 3s infinite, round 4s infinite;
+}
+
+@keyframes loader {
+  0%   { transform: translate3d(-50%, -50%, 0) rotate(0deg) scale(1, 1); }
+  70%  { transform: translate3d(-50%, -50%, 0) rotate(360deg) scale(0.7, 0.7); }
+  100% { transform: translate3d(-50%, -50%, 0) rotate(360deg) scale(1, 1); }
+}
+
+@keyframes round {
+  0% {
+    box-shadow:
+      31px 45px 0 5px #3385ff,
+      13px 20px 0 2px #ff9967,
+      -31px -45px 0 5px #3385ff,
+      -13px -20px 0 2px #ff9967;
+  }
+  25% {
+    box-shadow:
+      -13px -20px 0 2px #ff9967,
+      31px 45px 0 5px #3385ff,
+      13px 20px 0 2px #ff9967,
+      -31px -45px 0 5px #3385ff;
+  }
+  50% {
+    box-shadow:
+      -31px -45px 0 5px #3385ff,
+      -13px -20px 0 2px #ff9967,
+      31px 45px 0 5px #3385ff,
+      13px 20px 0 2px #ff9967;
+  }
+  75% {
+    box-shadow:
+      -13px -20px 0 2px #ff9967,
+      31px 45px 0 5px #3385ff,
+      13px 20px 0 2px #ff9967,
+      -31px -45px 0 5px #3385ff;
+  }
+  100% {
+    box-shadow:
+      31px 45px 0 5px #3385ff,
+      13px 20px 0 2px #ff9967,
+      -31px -45px 0 5px #3385ff,
+      -13px -20px 0 2px #ff9967;
+  }
+}
+
+
 
 .carousel-item {
   height: 450px;
@@ -134,11 +216,11 @@ body {
 }
 
 @media (min-width: 1px) and (max-width: 1024px) {
-  
+
   .main-footer {
     text-align: center!important;
   }
-  
+
 }
 
 @media (min-width: 1025px) {
@@ -158,6 +240,6 @@ body {
   #patreon {
     min-height: 325px!important;
   }
-  
+
 
 }
